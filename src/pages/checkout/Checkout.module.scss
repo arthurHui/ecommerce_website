@@ -1,0 +1,59 @@
+.cartData {
+    border: 1px solid #EDEDED;
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    margin: 25px 0;
+
+    .title {
+        font-size: 20px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+}
+
+.rotateUp {
+    transform: rotate(0);
+    transition: transform 0.5s ease 0s;
+}
+
+.rotateDown {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease 0s;
+}
+
+.info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .section {
+        width: 49%;
+    }
+
+}
+
+.emptyInput {
+    border-color: #ff0000;
+    margin-bottom: 3px !important;
+}
+
+.floatRoot {
+    display: flow-root;
+
+    .checkoutInfo {
+        padding: 10px;
+        width: 40%;
+        float: right;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .info {
+        display: block;
+
+        .section {
+            width: 100%;
+        }
+    }
+}

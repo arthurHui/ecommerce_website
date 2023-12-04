@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.icon {
+    animation: movement 1s linear 2s infinite alternate;
+}
+
+@keyframes movement {
+    0% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(-15deg);
+        color: #02b9c8;
+    }
+}

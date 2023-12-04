@@ -1,0 +1,76 @@
+.FooterContainer {
+    width: 100%;
+    height: 250px;
+    background-color: #ffc069;
+    color: #fff;
+    font-size: 14px;
+
+    .list {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+    }
+
+    .title {
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    div {
+        margin-bottom: 5px;
+    }
+
+    .currencyAndLanguage {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .socialMdeia {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .copyRight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 100px;
+    }
+}
+
+.socialMedia {
+    font-size: 18px;
+
+    .icon {
+        cursor: pointer;
+
+        &:hover {
+            color: #4096ff;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .FooterContainer {
+        width: 100%;
+        height: auto;
+
+        .list {
+            padding: 20px;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .copyRight {
+            margin-top: 10px;
+            padding-bottom: 15px;
+            padding-right: 0;
+            margin-bottom: 0
+        }
+    }
+}

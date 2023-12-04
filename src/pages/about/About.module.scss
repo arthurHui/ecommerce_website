@@ -1,0 +1,31 @@
+.container {
+    margin: 20px auto;
+    max-width: 1300px;
+    line-height: 2;
+
+    .title {
+        font-size: 36px;
+        color: #4096ff;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .subTitle {
+        font-size: 30px;
+        color: #4096ff;
+        font-weight: bold;
+    }
+
+    .special {
+        font-size: 26px;
+        font-weight: bold;
+        color: #5cb85c;
+    }
+
+    div {
+        font-size: 18px;
+        color: #525252;
+        font-weight: 600;
+    }
+
+}

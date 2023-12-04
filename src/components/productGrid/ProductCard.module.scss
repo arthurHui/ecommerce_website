@@ -1,0 +1,135 @@
+.ProductCardContainer {
+    margin: 10px;
+    position: relative;
+    cursor: pointer;
+
+    .hoverView {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .add_to_cartButton {
+        position: absolute;
+        bottom: 20px;
+        left: 5%;
+        width: 90%;
+    }
+
+    .title {
+        text-align: center;
+        height: 42px;
+        line-height: 1.4;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+}
+
+.SellingPrice {
+    color: #4096ff;
+    overflow-wrap: break-word;
+    white-space: normal;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.originalPrice {
+    opacity: 0.6;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: line-through;
+}
+
+.productDetail {
+    margin-left: 20px;
+    text-align: left;
+
+    .title {
+        width: 300px;
+    }
+
+    .variationTitle {
+        color: #999999;
+        font-size: 13px;
+        margin: 20px 0 10px 0;
+    }
+
+    .selectedButton {
+        color: #4096ff;
+        border-color: #4096ff;
+    }
+
+    .count {
+        margin-top: 20px;
+        color: #999999;
+        font-size: 13px;
+    }
+
+    .checkOutButton {
+        height: 38px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.5;
+        user-select: none;
+        width: 150px;
+    }
+
+    .Space {
+        width: 100%;
+        margin-top: 20px;
+
+        div {
+            width: 100%;
+        }
+    }
+}
+
+.modal {
+    top: 50;
+    padding: 0;
+    max-height: 80vh;
+
+    :global {
+        .ant-modal-content {
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .add_to_cartButton {
+        width: 90%;
+        border-radius: 3px;
+    }
+
+    .SellingPrice {
+        text-align: left;
+    }
+
+    .originalPrice {
+        text-align: left;
+    }
+
+    .productDetail {
+        margin: auto;
+    }
+
+    .modal {
+        max-height: 60vh;
+
+        :global {
+            .ant-modal-content {
+                overflow-y: auto;
+                max-height: 60vh;
+            }
+        }
+    }
+}

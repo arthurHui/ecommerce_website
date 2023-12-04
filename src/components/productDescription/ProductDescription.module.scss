@@ -1,0 +1,156 @@
+.productDescriptionContainer {
+    margin: 20px auto;
+    max-width: 1300px;
+    text-align: center;
+
+    .imageList {
+        margin-right: 10px;
+    }
+
+    .selectedImage {
+        border: 1px solid #4096ff;
+    }
+
+    .SellingPrice {
+        color: #4096ff;
+        overflow-wrap: break-word;
+        white-space: normal;
+        text-align: center;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .originalPrice {
+        opacity: 0.6;
+        text-align: center;
+        color: #333;
+        font-size: 16px;
+        font-weight: 400;
+        text-decoration: line-through;
+    }
+
+    .productDetail {
+        margin-left: 20px;
+        text-align: left;
+
+        .title {
+            width: 400px;
+        }
+
+        .variationTitle {
+            color: #999999;
+            font-size: 13px;
+            margin: 20px 0 10px 0;
+        }
+
+        .selectedButton {
+            color: #4096ff;
+            border-color: #4096ff;
+        }
+
+        .optionList {
+            width: 400px;
+        }
+
+        .count {
+            margin-top: 20px;
+            color: #999999;
+            font-size: 13px;
+        }
+
+        .checkOutButton {
+            height: 38px;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.5;
+            user-select: none;
+            width: 200px;
+        }
+    }
+}
+
+.paymentDelivery {
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+
+    .chlid {
+        width: 30%;
+        margin: auto;
+
+        .title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.productDescription {
+    text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+    .productDescriptionContainer {
+        padding: 0 10px;
+
+        .productDetail {
+
+            margin: auto;
+
+            .title {
+                width: 100%;
+            }
+
+            .optionList {
+                width: 100%;
+            }
+
+            .checkOutButton {
+                width: 100%;
+            }
+
+            .Space {
+                width: 100%;
+                margin-top: 20px;
+
+                div {
+                    width: 100%;
+                }
+            }
+
+        }
+    }
+
+    .productDescription {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .imageFlex {
+        width: 100%;
+        overflow-x: scroll;
+        margin: 10px 0;
+    }
+}
+
+.rateView {
+    padding: 20px;
+    color: #1677ff;
+    background-color: #e6f4ff;
+    border: 1px solid #bae0ff;
+    font-size: 28px;
+}
+
+.reviewContainer {
+    text-align: left;
+
+    .card {
+        padding: 10px 0;
+
+        .productOptionTitle {
+            color: #999999
+        }
+    }
+}
