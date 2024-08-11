@@ -1,5 +1,4 @@
-// export const SERVER_URL = "http://localhost:8000"
-export const SERVER_URL = "https://api.opngpt.click"
+export const SERVER_URL = "http://localhost:8000"
 export const prefix = "ecommerce_website";
 export const error_code = {
     password: "密碼",
